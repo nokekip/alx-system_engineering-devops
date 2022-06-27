@@ -1,0 +1,2 @@
+#!/bin/bash
+fing . -tyoe f -name "*.js" -delete
