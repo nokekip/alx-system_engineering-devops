@@ -1,4 +1,4 @@
-# kills a process named killmenow using Puppet
+# kills a process named killmenow
 
 exec { 'kill':
   command => 'pkill killmenow',
