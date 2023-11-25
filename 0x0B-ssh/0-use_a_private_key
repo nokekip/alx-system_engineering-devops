@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# this script uses ssh to  connect to server using privet key
+
+ssh -i ~/.ssh/school ubuntu@100.26.241.219
