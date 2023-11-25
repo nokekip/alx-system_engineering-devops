@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# generates RSE key pair
+
+ssh-keygen -b 4096 -n "betty" -f "./school"
