@@ -15,7 +15,8 @@ def export_to_json():
     todos = requests.get(base_url + f"users/{user_id}/todos").json()
 
     """Export data to JSON"""
-    with open(f"{user_id}.json", 'w') as jsonfile:json.dump({user_id: [{
+    with open(f"{user_id}.json", 'w') as jsonfile:
+        json.dump({user_id: [{
             "task": todo.get('title'),
             "completed": todo.get('completed'),
             "username": user.get('username')
