@@ -18,7 +18,7 @@ def user_info():
     """Export fetched data to CSV file"""
     with open(f"{user_id}.csv", 'w') as csvfile:
         for todo in todos:
-            csvfile.write('"{}","{}","{}","{}\n'
+            csvfile.write('"{}","{}","{}","{}"\n'
                           .format(user_id, user.get('username'),
                                   todo.get('completed'),
                                   todo.get('title')))
