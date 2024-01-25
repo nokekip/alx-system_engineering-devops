@@ -57,7 +57,7 @@ server {
 
 	error_page 404 /404.html;
 	
-	location = /airbnb-onepage {
+	location /airbnb-onepage {
                 include proxy_params;
                 proxy_pass http://localhost:5000/airbnb-onepage/;
         }
